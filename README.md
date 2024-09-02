@@ -1,23 +1,30 @@
 # Personal notes / Had to run also    
 
-- install packages
-sudo apt-get install --yes libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libgdbm-dev lzma lzma-dev tcl-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev wget curl make build-essential openssl
+- general  
+Use node 12 as written below. The Python version that came with piOS didn't work.
 
-Install pyenv - to change python version to 3.10.4 (had errors in a newer version)
+- Install packages
+```
+sudo apt-get install --yes libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libgdbm-dev lzma lzma-dev tcl-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev wget curl make build-essential openssl
+```
+- Install pyenv - to change python version to 3.10.4 (had errors in a newer version)
+```
 curl https://pyenv.run | bash
+```
 
 And than version 3.10.4 of python
+```
 pyenv install 3.10.4  
 pyenv global 3.10.4
+```
+- Update /boot/firmware/config.txt (otherwise the initilization of the camera fails)  
+Remove the line "camera_auto_detect=1", and add "start_x=1" and "gpu_mem=128"
 
-Update /boot/firmware/config.txt (otherwise the initilization of the camera fails)
-remove the line "camera_auto_detect=1", and add "start_x=1" and "gpu_mem=128"
-
-update/create rposConfig.json from rposConfig rposConfig.sample-picam.json
-- set username & password
-- change "RTSPServer" to 2 (and install as described below for 2)
-- set "IpAddress" to the address of the pi
--  (probably no need for this: to make it work in pm2 set the "RTSPAddress" to "0.0.0.0" //instead of 127.0.0.1
+- Update/create rposConfig.json from rposConfig rposConfig.sample-picam.json
+    - set username & password
+    - change "RTSPServer" to 2 (and install as described below for 2)
+    - set "IpAddress" to the address of the pi
+    -  (probably no need for this: to make it work in pm2 set the "RTSPAddress" to "0.0.0.0" //instead of 127.0.0.1
 
 end of Personal notes / Had to run also
 
