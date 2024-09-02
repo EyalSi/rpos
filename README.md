@@ -1,14 +1,21 @@
-had to run also    
+## Had to run also    
 
 sudo apt-get install --yes libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libgdbm-dev lzma lzma-dev tcl-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev wget curl make build-essential openssl
 
-install pyenv curl https://pyenv.run | bash
+install pyenv 
+curl https://pyenv.run | bash
 
 pyenv install 3.10.4  
 pyenv global 3.10.4
 
 in /boot/firmware/config.txt
 remove the line "camera_auto_detect=1", and add "start_x=1" and "gpu_mem=128"
+
+## in rposConfig.json
+- to make it work in pm2 set the "RTSPAddress" to "0.0.0.0" //instead of 127.0.0.1
+- set username & password
+- change "RTSPServer" to 2 (and install as described below for 2)
+- set "IpAddress" to the address of the pi
 
 # rpos
 
