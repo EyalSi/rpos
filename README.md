@@ -17,6 +17,8 @@ remove the line "camera_auto_detect=1", and add "start_x=1" and "gpu_mem=128"
 - change "RTSPServer" to 2 (and install as described below for 2)
 - set "IpAddress" to the address of the pi
 
+end of Personal notes / Had to run also
+
 # rpos
 
 Node.js based ONVIF Camera/NVT software that turns a Raspberry Pi, Windows, Linux or Mac computer into an ONVIF Camera and RTSP Server. It implements the key parts of Profile S and Profile T (http://www.onvif.org). It has special support for the Raspberry Pi Camera and Pimoroni Pan-Tilt HAT.
