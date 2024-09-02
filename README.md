@@ -1,5 +1,7 @@
 had to run also    
     sudo apt-get install libssl-dev
+    sudo modprobe -v bcm2835-v4l2
+    echo bcm2835-v4l2 | sudo tee -a /etc/modules-load.d/bcm2835-v412.conf
 
 # rpos
 
