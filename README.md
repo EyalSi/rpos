@@ -1,6 +1,6 @@
 # Personal notes / Had to run also    
 
-- general  
+- General  
 Use node 12 as written below. The Python version that came with piOS didn't work.
 
 - Install packages
