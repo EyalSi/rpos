@@ -1,17 +1,19 @@
 # Personal notes / Had to run also    
 
+- install packages
 sudo apt-get install --yes libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libgdbm-dev lzma lzma-dev tcl-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev wget curl make build-essential openssl
 
 Install pyenv - to change python version to 3.10.4 (had errors in a newer version)
 curl https://pyenv.run | bash
 
+And than version 3.10.4 of python
 pyenv install 3.10.4  
 pyenv global 3.10.4
 
-In /boot/firmware/config.txt
+Update /boot/firmware/config.txt (otherwise the initilization of the camera fails)
 remove the line "camera_auto_detect=1", and add "start_x=1" and "gpu_mem=128"
 
-## in rposConfig.json
+update/create rposConfig.json from rposConfig rposConfig.sample-picam.json
 - set username & password
 - change "RTSPServer" to 2 (and install as described below for 2)
 - set "IpAddress" to the address of the pi
