@@ -2,7 +2,7 @@
 
 - General  
 Using Raspbeery Pi 4 with Pi OS (64-bit) Realesed 2024-07-04. Cam v2.  
-Use node 12 as written below. The Python version that came with Pi OS didn't work, so you need to set to version 3.10.4.
+Use node 12 as written below. The Python version that came with Pi OS didn't work, so you need to switch to version 3.10.4 (described below).
 
 - Install packages
 ```
