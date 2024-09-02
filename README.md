@@ -1,4 +1,4 @@
-# Personal notes / Had to run also    
+# Personal notes
 
 - General  
 Using Raspbeery Pi 4 with Pi OS (64-bit) Realesed 2024-07-04. Cam v2.  
@@ -26,8 +26,6 @@ Remove the line "camera_auto_detect=1", and add "start_x=1" and "gpu_mem=128"
     - change "RTSPServer" to 2 (and install as described below for 2)
     - set "IpAddress" to the address of the pi
     -  (probably no need for this: to make it work in pm2 set the "RTSPAddress" to "0.0.0.0" //instead of 127.0.0.1
-
-end of Personal notes / Had to run also
 
 # rpos
 
