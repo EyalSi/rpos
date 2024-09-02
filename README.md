@@ -8,7 +8,7 @@ curl https://pyenv.run | bash
 pyenv install 3.10.4  
 pyenv global 3.10.4
 
-in /boot/firmware/config.txt
+In /boot/firmware/config.txt
 remove the line "camera_auto_detect=1", and add "start_x=1" and "gpu_mem=128"
 
 ## in rposConfig.json
