@@ -1,4 +1,4 @@
-had to run also 
+had to run also    
     sudo apt-get install libssl-dev
 
 # rpos
