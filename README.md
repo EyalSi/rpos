@@ -1,10 +1,10 @@
 had to run also    
-    sudo apt-get install libssl-dev
-    sudo modprobe -v bcm2835-v4l2
-    echo bcm2835-v4l2 | sudo tee -a /etc/modules-load.d/bcm2835-v412.conf
+
+pyenv install 3.10.4
 
 sudo apt-get install --yes libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libgdbm-dev lzma lzma-dev tcl-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev wget curl make build-essential openssl
 
+install pyenv curl https://pyenv.run | bash
 
 # rpos
 
