@@ -4,8 +4,8 @@ sudo apt-get install --yes libssl-dev zlib1g-dev libbz2-dev libreadline-dev libs
 
 install pyenv curl https://pyenv.run | bash
 
-pyenv install 3.10.4
-
+pyenv install 3.10.4  
+pyenv global 3.10.4
 
 in /boot/firmware/config.txt
 remove the line "camera_auto_detect=1", and add "start_x=1" and "gpu_mem=128"
